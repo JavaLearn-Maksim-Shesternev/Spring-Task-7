@@ -5,8 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.javamentor.crudapp</groupId>
-    <artifactId>mvc-hiber-crud</artifactId>
+    <artifactId>spring_mvc</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <packaging>war</packaging>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -19,13 +21,19 @@
 
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>6.1.13</version>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.springframework</groupId>-->
+<!--            <artifactId>spring-context</artifactId>-->
+<!--            <version>${spring.version}</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
+            <artifactId>spring-orm</artifactId>
             <version>${spring.version}</version>
         </dependency>
 
@@ -34,6 +42,12 @@
             <artifactId>hibernate-core</artifactId>
             <version>6.6.0.Final</version>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>jakarta.persistence</groupId>-->
+<!--            <artifactId>jakarta.persistence-api</artifactId>-->
+<!--            <version>3.2.0</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -81,7 +95,7 @@
                 </configuration>
             </plugin>
         </plugins>
-        <finalName>Spring_MVC</finalName>
+        <finalName>spring_mvc</finalName>
     </build>
 
 </project>
